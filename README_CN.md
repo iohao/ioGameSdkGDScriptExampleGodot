@@ -217,3 +217,24 @@ class MyNetChannel extends IoGame.SimpleNetChannel:
 
 
 
+
+
+## 新项目如何安装 ioGame GDScript SDK
+
+当前 demo 已经安装了 ioGame GDScript SDK，下面介绍如何在新项目中安装 SDK。
+
+通过 AssetLib 搜索 ooGame 并下载
+
+![](./doc/SDK1.png)
+
+点击 Install 按钮，将 sdk 安装到 addons 插件目录中。
+
+![](./doc/SDK2.png)
+
+安装后 addons 目录会多出 sdk 相关文件
+
+![](./doc/SDK3.png)
+
+
+![](./doc/SDK4.png)
+
