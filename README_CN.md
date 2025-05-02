@@ -194,6 +194,15 @@ class MyNetChannel extends IoGame.SimpleNetChannel:
 
 
 
+## 接口源码目录
+
+`./gen/code` 目录中的 `action、广播、错误码` ...等交互接口文件由  [ioGame 生成](https://www.yuque.com/iohao/game/irth38)。代码生成可为客户端开发者减少巨大的工作量，代码使用简单，与本地方法调用一般丝滑。
+
+![](./doc/codeGen.png)
+
+
+
+
 ## 如何根据 .proto 生成相关 pb
 
 > see https://github.com/oniksan/godobuf
