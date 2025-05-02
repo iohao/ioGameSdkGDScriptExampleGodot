@@ -2,7 +2,7 @@
 
 
 
-## ioGameSdkCsharpExampleGodot
+## ioGameSdkGDScriptExampleGodot
 
 The [ioGame GDScript SDK](https://github.com/iohao/ioGame/issues/444) provides a simple wrapper for interaction between the Netty, WebSocket, Protobuf, GDScript, and [ioGame](https://github.com/iohao/ioGame/) game servers.
 
