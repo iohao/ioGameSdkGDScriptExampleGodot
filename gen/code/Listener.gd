@@ -310,4 +310,3 @@ static func listener_ioGame() -> void:
 		var _format := "[%s], [broadcast_title: %s]" % [_merge_title, _title]
 		IoGame.IoGameSetting.game_console.log(_format)
 	)
-

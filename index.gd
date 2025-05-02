@@ -113,7 +113,6 @@ func int_func():
 		print("error_info: ", _result.get_error_info())
 		
  
-
 func int_list_func():
 	print("-------- OnListInt --------")
 	var value_list: Array[int] = [1, 2]
@@ -218,6 +217,7 @@ func listene():
 		result.log(result.get_int())
 	)
 
+
 func value_func():
 	print("-------- OnValueObject --------")
 	var verify_message := Common.LoginVerifyMessage.new()
@@ -254,7 +254,15 @@ func value_list_func():
 	var value_list: Array = _result.list_value(Common.UserMessage)
 	_result.log(value_list)
 
-	
+
+func hello_callback():
+	var _name := "Michael Jackson"
+	# code style: callback. cn: 编码风格，回调
+	MyAction.of_hello(_name, func(result: IoGame.ResponseResult):
+		result.log(result.get_string())
+	)
+
+
 func hello_await():
 	var _name := "Michael Jackson"
 	# code style: async await. cn: 编码风格，await
@@ -262,17 +270,24 @@ func hello_await():
 	result.log(result.get_string())
 
 
+func login_verify_await():
+	var login_verify := Common.LoginVerifyMessage.new()
+	login_verify.set_jwt("10")
+	
+	var result := await MyAction.of_await_login_verify(login_verify)
+	# code style: async await. cn: 编码风格：async await 风格
+	if result.success():
+		var _value := result.get_value(Common.UserMessage) as Common.UserMessage
+		result.log(_value)
 
 
+func login_verify_callback():
+	var login_verify := Common.LoginVerifyMessage.new()
+	login_verify.set_jwt("10")
 
-
-
-
-
-
-func hello_callback():
-	var _name := "Michael Jackson"
-	# code style: callback. cn: 编码风格，回调
-	MyAction.of_hello(_name, func(result: IoGame.ResponseResult):
-		result.log(result.get_string())
+	# code style: callback. cn: 编码风格：回调风格
+	MyAction.of_login_verify(login_verify, func(result: IoGame.ResponseResult):
+		# 我的用户信息。My UserMessage
+		var _value := result.get_value(Common.UserMessage) as Common.UserMessage
+		result.log(_value)
 	)
