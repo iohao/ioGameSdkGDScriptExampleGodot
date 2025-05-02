@@ -1,0 +1,46 @@
+// generate 2025-05-02 17:34:51 , protoSize: 5
+// https://github.com/iohao/ioGame
+
+syntax = "proto3";
+package common;
+
+// AnimalEnum
+enum AnimalEnum {
+  // AnimalEnum
+  dog1 = 0;
+  // AnimalEnum
+  bird1 = 1;
+}
+
+// Bullet
+message BulletMessage {
+  // id
+  int32 bullet_id = 1;
+  // bullet name
+  string name = 2;
+}
+
+// CarEnum
+enum CarEnum {
+  // CarEnum
+  dog = 0;
+  // CarEnum
+  bird = 1;
+  // CarEnum
+  catCar = 2;
+}
+
+// LoginVerify
+message LoginVerifyMessage {
+  // jwt
+  string jwt = 1;
+}
+
+// User
+message UserMessage {
+  // userId
+  int64 user_id = 1;
+  // nickname
+  string name = 2;
+}
+

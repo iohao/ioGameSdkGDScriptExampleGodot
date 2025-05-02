@@ -1,0 +1,76 @@
+[gd_scene load_steps=2 format=3 uid="uid://6sjg51whn3mr"]
+
+[ext_resource type="Script" uid="uid://dxj2mxev66lif" path="res://index.gd" id="1_356j3"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_356j3")
+
+[node name="Single" type="VBoxContainer" parent="."]
+offset_left = 27.0
+offset_top = 201.0
+offset_right = 201.0
+offset_bottom = 394.0
+scale = Vector2(1.52, 1.6)
+
+[node name="OnIntValue" type="Button" parent="Single"]
+layout_mode = 2
+text = "OnIntValue"
+
+[node name="OnLongValue" type="Button" parent="Single"]
+layout_mode = 2
+text = "OnLongValue"
+
+[node name="OnBoolValue" type="Button" parent="Single"]
+layout_mode = 2
+text = "OnBoolValue"
+
+[node name="OnStringValue" type="Button" parent="Single"]
+layout_mode = 2
+text = "OnStringValue"
+
+[node name="OnValueObject" type="Button" parent="Single"]
+layout_mode = 2
+text = "OnValueObject"
+
+[node name="List" type="VBoxContainer" parent="."]
+offset_left = 367.0
+offset_top = 201.0
+offset_right = 541.0
+offset_bottom = 394.0
+scale = Vector2(1.52, 1.6)
+
+[node name="OnListInt" type="Button" parent="List"]
+layout_mode = 2
+text = "OnListInt"
+
+[node name="OnListLong" type="Button" parent="List"]
+layout_mode = 2
+text = "OnListLong"
+
+[node name="OnListBool" type="Button" parent="List"]
+layout_mode = 2
+text = "OnListBool"
+
+[node name="OnListString" type="Button" parent="List"]
+layout_mode = 2
+text = "OnListString"
+
+[node name="OnListValue" type="Button" parent="List"]
+layout_mode = 2
+text = "OnListValue"
+
+[node name="OnTriggerBroadcast" type="Button" parent="."]
+offset_left = 34.0
+offset_top = 74.0
+offset_right = 206.0
+offset_bottom = 106.0
+scale = Vector2(1.6, 1.64)
+text = "OnTriggerBroadcast"
+
+[node name="OnTestError" type="Button" parent="."]
+offset_left = 353.0
+offset_top = 77.0
+offset_right = 516.0
+offset_bottom = 108.0
+scale = Vector2(1.6, 1.64)
+text = "OnTestError"
